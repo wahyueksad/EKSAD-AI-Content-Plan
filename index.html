@@ -75,7 +75,25 @@ html,body{width:100%;height:100%;overflow:hidden}
 <div style="margin-top:20px;border:1px solid #dce6ef;background:#f8fbfd;border-radius:18px;padding:15px 18px"><div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="font-size:22px">↻</div><div><b>Targeted Revision Flow</b><div class="small">Jika tidak approved, HERMES mengidentifikasi jenis revisi dan mengembalikan pekerjaan hanya ke titik yang relevan.</div></div></div><div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;font-size:11px"><div class="node">Data / Klaim<br><b>→ Agent 01</b></div><div class="node">Market Insight<br><b>→ Agent 02</b></div><div class="node">Solusi / Produk<br><b>→ Agent 03</b></div><div class="node">Ide / Format<br><b>→ Agent 04</b></div><div class="node">Tone / Brand Guardrail<br><b>→ Agent 05</b></div><div class="node">Asset / Execution<br><b>→ Agent 06</b></div></div><div class="small" style="text-align:center;margin-top:10px"><b>NO / REVISI → HERMES → Agent relevan → downstream yang terdampak → Human Review kembali</b></div></div>
 <div class="footer"><span>EKSAD Technology</span><span>Multi-Agent Content Workflow</span></div></section>
 
-<section class="slide" id="s3"><div class="topline"><div><div class="kicker">STRATEGI PUBLISHING</div><h2>Prime Time Mengikuti Platform</h2></div><div class="num">04</div></div>
+
+<section class="slide" id="s-prohace-sim"><div class="topline"><div><div class="kicker">WORKFLOW SIMULATION • PROHACE</div><h2>Dari Telegram Request → AI Content Package → Review → Publish</h2><p class="small" style="margin:4px 0 0">Contoh operasional untuk memperlihatkan data yang berpindah dari satu agent ke agent berikutnya.</p></div><div class="num">04</div></div>
+<div style="display:grid;grid-template-columns:1.05fr 1.95fr;gap:16px;margin-top:8px">
+  <div style="border:1px solid #b8d8e9;background:#f4fbff;border-radius:18px;padding:17px"><span class="pill">TELEGRAM • REQUEST</span><h3 style="margin-top:11px">“Buat konten ProHace”</h3><p class="small" style="line-height:1.5;margin-bottom:0">/create<br><b>Product:</b> ProHace<br><b>Goal:</b> Awareness<br><b>Audience:</b> Head of HR / HR Director<br><b>Topic:</b> administrasi HR manual<br><b>Channel:</b> rekomendasikan platform & format terbaik</p></div>
+  <div style="border-radius:18px;background:linear-gradient(135deg,#071a2f,#0c5ea8);color:white;padding:17px 20px"><div style="display:flex;justify-content:space-between;gap:14px"><div><b style="font-size:17px">HERMES menerima request</b><div style="font-size:12px;color:#d7e9f5;margin-top:5px">Klasifikasi request → ambil context → jalankan Agent 01–06 → simpan source & workflow metadata.</div></div><span style="font-size:11px;color:#bfe6f3;text-align:right">GLOBAL BRAND<br>GOVERNANCE ACTIVE</span></div></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px">
+ <div class="card" style="padding:14px;border-top:4px solid #0c5ea8"><span class="pill">01 • READ</span><h3 style="margin-top:8px">Pembaca Dokumen</h3><p class="small" style="line-height:1.38"><b>Baca:</b> Product Knowledge ProHace, proposal terkait, approved project/success case, corporate/brand reference.<br><b>Hasil:</b> fitur & capability tervalidasi, pain point HR yang didukung sumber, evidence/claim yang boleh dipakai, source reference.</p></div>
+ <div class="card" style="padding:14px;border-top:4px solid #22a6c7"><span class="pill">02 • ANALYZE</span><h3 style="margin-top:8px">Trend Analytic</h3><p class="small" style="line-height:1.38"><b>Input:</b> evidence Agent 01 + market/trend data yang sudah dikurasi.<br><b>Hasil:</b> isu prioritas: data HR tersebar & proses admin manual → waktu HR tersita, employee journey terfragmentasi, insight lambat.</p></div>
+ <div class="card" style="padding:14px;border-top:4px solid #f59e0b"><span class="pill">03 • SOLVE</span><h3 style="margin-top:8px">Solution</h3><p class="small" style="line-height:1.38"><b>Mapping:</b> problem → business consequence → capability ProHace.<br><b>Hasil:</b> positioning: integrasi data & proses HR untuk mengurangi pekerjaan administratif dan memperbaiki visibility; claim tetap mengikuti evidence Agent 01.</p></div>
+ <div class="card" style="padding:14px;border-top:4px solid #0c5ea8"><span class="pill">04 • PLAN</span><h3 style="margin-top:8px">Content Planner</h3><p class="small" style="line-height:1.38"><b>Keputusan:</b> Awareness • Head of HR • problem-first.<br><b>Format:</b> Carousel LinkedIn + Instagram.<br><b>Hook:</b> “HR seharusnya mengelola manusia, bukan spreadsheet.”<br><b>CTA:</b> Explore a more connected HR operation.</p></div>
+ <div class="card" style="padding:14px;border-top:4px solid #7656c9"><span class="pill">05 • GUARD</span><h3 style="margin-top:8px">Brand Guardian</h3><p class="small" style="line-height:1.38"><b>Guardrail:</b> executive, clear, non-technical, problem-first; ProHace sebagai enabler, bukan hard selling.<br><b>Visual:</b> clean enterprise HR, EKSAD visual DNA; hindari klaim yang tidak memiliki source.</p></div>
+ <div class="card" style="padding:14px;border-top:4px solid #0d8b67"><span class="pill">06 • CREATE</span><h3 style="margin-top:8px">Design & Production</h3><p class="small" style="line-height:1.38"><b>Produksi:</b> final copy + struktur slide → prompt → Qwen Image 3.0 Pro → layout/asset.<br><b>Output:</b> publish-ready carousel + caption + CTA + source/validation note + workflow metadata.</p></div>
+</div>
+<div style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12px"><div class="node" style="flex:1"><b>Telegram • Preview</b><br><span class="small">HERMES kirim preview + caption + sumber + tombol Approve / Revise.</span></div><div class="arrow">→</div><div class="node"><b>APPROVE</b><br><span class="small">Status: Approved</span></div><div class="arrow" style="color:#0d8b67">→</div><div class="node" style="border-color:#9ddbc9;background:#f1fbf7"><b>Manual Publish</b><br><span class="small">LinkedIn / Instagram</span></div></div>
+<div style="margin-top:9px;border:1px solid #f0c6c6;background:#fff8f8;border-radius:13px;padding:10px 14px;font-size:12px"><b style="color:#a33">Jika REVISE:</b> contoh “headline terlalu hard selling” → HERMES klasifikasikan sebagai <b>Brand/Message Revision</b> → Agent 05 → Agent 06 → preview baru kembali ke Telegram → Human Review → Approve → Manual Publish.</div>
+<div class="footer"><span>EKSAD Technology</span><span>Illustrative ProHace Workflow Simulation</span></div></section>
+
+<section class="slide" id="s3"><div class="topline"><div><div class="kicker">STRATEGI PUBLISHING</div><h2>Prime Time Mengikuti Platform</h2></div><div class="num">05</div></div>
 <table><thead><tr><th>Platform</th><th>Baseline 2027</th><th>Implementasi Schedule</th></tr></thead><tbody>
 <tr><td><b>LinkedIn</b></td><td>Hari kerja; fokus Selasa–Kamis, jam kerja/siang</td><td>±10.00–16.00 WIB; weekend tidak dipaksakan</td></tr>
 <tr><td><b>Instagram Feed / Carousel</b></td><td>Siang–sore; strongest midweek</td><td>±13.00–18.00 WIB, bervariasi menurut hari</td></tr>
@@ -87,7 +105,7 @@ html,body{width:100%;height:100%;overflow:hidden}
 
 
 <section class="slide" id="s4">
-<div class="topline"><div><div class="kicker">EKSAD • 2027 CONTENT SCHEDULE</div><h2>Schedule Konten 1 Tahun</h2></div><div class="num">05</div></div>
+<div class="topline"><div><div class="kicker">EKSAD • 2027 CONTENT SCHEDULE</div><h2>Schedule Konten 1 Tahun</h2></div><div class="num">06</div></div>
 <div class="calendar-toolbar">
 <select id="monthFilter"><option value="">Semua Bulan</option><option value="01">Januari</option><option value="02">Februari</option><option value="03">Maret</option><option value="04">April</option><option value="05">Mei</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">Agustus</option><option value="09">September</option><option value="10">Oktober</option><option value="11">November</option><option value="12">Desember</option></select>
 <select id="productFilter"><option value="">Semua Produk</option><option>ProTect</option><option>ProSAGE</option><option>ProTalent</option><option>ProCloud</option><option>ProDMs</option><option>ProHace</option><option>EKSAD</option></select>
@@ -99,12 +117,12 @@ html,body{width:100%;height:100%;overflow:hidden}
 <div class="footer"><span>EKSAD Technology</span><span>Schedule 2027</span></div></section>
 
 
-<section class="slide" id="s5"><div class="topline"><div><div class="kicker">PRODUCTION VOLUME</div><h2>Asumsi Produksi & Revisi</h2></div><div class="num">06</div></div>
+<section class="slide" id="s5"><div class="topline"><div><div class="kicker">PRODUCTION VOLUME</div><h2>Asumsi Produksi & Revisi</h2></div><div class="num">07</div></div>
 <div class="grid g4"><div class="card"><div class="metric">2.555</div><div class="label">core content/tahun</div></div><div class="card"><div class="metric">±1.825</div><div class="label">static / carousel</div></div><div class="card"><div class="metric">±730</div><div class="label">short video</div></div><div class="card"><div class="metric">3×</div><div class="label">maks. generation per aset: 1 awal + 2 revisi</div></div></div>
 <div class="note" style="margin-top:24px">Qwen Image 3.0 Pro digunakan untuk gambar, carousel dan keyframe. Wan 2.7 I2V digunakan untuk video. Cross-posting tidak dihitung sebagai generasi aset baru.</div>
 <div class="footer"><span>EKSAD Technology</span><span>Production Assumption</span></div></section>
 
-<section class="slide" id="s6"><div class="topline"><div><div class="kicker">BUDGET 2027</div><h2>Rincian Anggaran Tahunan</h2></div><div class="num">07</div></div>
+<section class="slide" id="s6"><div class="topline"><div><div class="kicker">BUDGET 2027</div><h2>Rincian Anggaran Tahunan</h2></div><div class="num">08</div></div>
 <table><thead><tr><th>Komponen</th><th>Dasar Perhitungan</th><th>Bulanan</th><th>Tahunan</th></tr></thead><tbody>
 <tr><td>Qwen Image 3.0 Pro<br><span class="pill" style="margin-top:6px">Vendor Pricing</span></td><td>±2.729 aset final × 3 generation</td><td>±Rp818.700</td><td><b>±Rp9.824.400</b></td></tr>
 <tr><td>Wan 2.7 I2V 720P<br><span class="pill" style="margin-top:6px">Vendor Pricing</span></td><td>±730 video × 9 detik × 3 generation</td><td>±Rp2.628.000</td><td><b>±Rp31.536.000</b></td></tr>
@@ -133,7 +151,7 @@ html,body{width:100%;height:100%;overflow:hidden}
 </div>
 <div class="footer"><span>EKSAD Technology</span><span>Annual Budget</span></div></section>
 
-<section class="slide" id="s7"><div class="topline"><div><div class="kicker">BUDGET REQUEST</div><h2>Ringkasan Pengajuan</h2></div><div class="num">08</div></div>
+<section class="slide" id="s7"><div class="topline"><div><div class="kicker">BUDGET REQUEST</div><h2>Ringkasan Pengajuan</h2></div><div class="num">09</div></div>
 <div class="grid g3"><div class="card"><div class="metric">2.555</div><div class="label">konten inti selama 2027</div></div><div class="card"><div class="metric">±64,54Jt</div><div class="label">working estimate</div></div><div class="card"><div class="metric">70Jt</div><div class="label">budget ceiling yang diajukan</div></div></div>
 <div class="note" style="margin-top:28px"><b>Tujuan budget:</b> menjalankan always-on content engine EKSAD berbasis masalah pasar, dengan distribusi pada prime time masing-masing platform dan ruang maksimal dua kali revisi per aset.</div>
 <div class="footer"><span>EKSAD Technology</span><span>2027 Budget Proposal</span></div></section>
